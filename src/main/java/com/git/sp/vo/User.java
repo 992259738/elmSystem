@@ -1,4 +1,4 @@
-package com.exam.test.vo;
+package com.git.sp.vo;
 /**
 *@author: cl
 *@version : 2018年12月3日 下午4:38:04

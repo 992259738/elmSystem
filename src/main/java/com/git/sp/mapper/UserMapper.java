@@ -1,4 +1,4 @@
-package com.exam.test.mapper;
+package com.git.sp.mapper;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.type.MappedJdbcTypes;
 
-import com.exam.test.vo.User;
+import com.git.sp.vo.User;
 
 
 
@@ -19,4 +19,5 @@ import com.exam.test.vo.User;
 @Mapper
 public interface UserMapper {
 	List<User> findAllUser();
+	User getUserByloginName(String userName);
 }

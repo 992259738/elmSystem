@@ -1,13 +1,13 @@
-package com.exam.test.service.Impl;
+package com.git.sp.service.Impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.exam.test.mapper.UserMapper;
-import com.exam.test.service.UserService;
-import com.exam.test.vo.User;
+import com.git.sp.mapper.UserMapper;
+import com.git.sp.service.UserService;
+import com.git.sp.vo.User;
 
 
 
@@ -17,7 +17,7 @@ import com.exam.test.vo.User;
 *
 *
 */
-@Service("UserService")
+@Service
 public class UserServiceImpl implements UserService{
 	
 	@Autowired
@@ -26,6 +26,14 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public List<User> findAllUser() {
 		return userMapper.findAllUser();
+	}
+
+	@Override
+	public User getUserByLoginName(String userName) {
+		
+		User user = userMapper.getUserByloginName(userName);
+		return user;
+		
 	}
 
 }

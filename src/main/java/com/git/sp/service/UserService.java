@@ -1,8 +1,8 @@
-package com.exam.test.service;
+package com.git.sp.service;
 
 import java.util.List;
 
-import com.exam.test.vo.User;
+import com.git.sp.vo.User;
 
 /**
 *@author: cl
@@ -13,4 +13,6 @@ import com.exam.test.vo.User;
 
 public interface UserService {
 	List<User> findAllUser();
+	
+	User getUserByLoginName(String userName);
 }
